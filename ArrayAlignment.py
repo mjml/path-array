@@ -47,7 +47,7 @@ def place_array (objlist, props={}):
             R1.A32 = -1; R1.A33 = 0
         else:
             # Sink Z so that Z=0 is the top surface
-            R1.A34 = -dim.z
+            R1.A34 = 0
         obj.Placement.Matrix = R1 * T1
         bb = obj.Shape.BoundBox
         Console.PrintMessage("bb3 is " + str(bb) + "\n")
